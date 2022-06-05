@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./AirbnbSignatureInput.scss";
+import { BiSearch } from "react-icons/bi";
 
 const AirbnbSignatureInput = () => {
   const [active, setActive] = useState(false);
@@ -19,9 +20,15 @@ const AirbnbSignatureInput = () => {
     <>
       <div className="flex flex-col gap-2">
         {!active ? (
-          <div className="airbnbSearchBox flex items-center gap-3 bg-white h-12 px-4 rounded-full">
-            <button onClick={() => setActive(true)}>Anywhere</button> |
-            <button>Any Week</button> |<button>Add Guest</button>
+          <div
+            className="airbnbSearchBox flex items-center gap-3 bg-white h-12 px-4 rounded-full"
+            onClick={() => setActive(true)}
+          >
+            <button>Anywhere</button> |<button>Any Week</button> |
+            <button>Add Guest</button>
+            <div className="bg-primary w-8 h-8 flex items-center justify-center text-[white] rounded-full cursor-pointer">
+              <BiSearch />
+            </div>
           </div>
         ) : (
           <div className="extended-search flex gap-1 bg-[#F1F1F1]s rounded-full scale-up-center">

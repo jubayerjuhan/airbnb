@@ -6,6 +6,9 @@ module.exports = {
     extend: {},
     colors: {
       primary: '#FF385C'
+    },
+    fontSize: {
+      'base': '15px',
     }
   },
   plugins: [],

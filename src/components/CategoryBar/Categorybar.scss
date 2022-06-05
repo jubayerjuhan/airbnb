@@ -1,0 +1,12 @@
+.categorybar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category {
+    img {
+      // filter: grayscale(12%);
+      filter: contrast(0.1);
+    }
+  }
+}
