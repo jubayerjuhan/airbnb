@@ -1,0 +1,59 @@
+.airbnbSearchBox {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 1px 2px 5px 1px;
+  > button {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+  }
+}
+
+.extended-search {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border: 1px solid rgba(60, 64, 67, 0.25);
+  input {
+    margin: 4px 0 0 0px;
+    outline: none;
+    background: transparent;
+    font-size: small;
+  }
+
+  > .search-field {
+    padding: 10px 25px;
+  }
+  > .search-active {
+    transition: all 0.3s ease-in-out;
+    // border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    background-color: white;
+  }
+}
+
+// animation
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+// keyframe
+// @-webkit-keyframes scale-up-center {
+//   0% {
+//     -webkit-transform: scale(0.6);
+//     transform: scale(0.6);
+//   }
+//   100% {
+//     -webkit-transform: scale(1);
+//     transform: scale(1);
+//   }
+// }
+@keyframes scale-up-center {
+  0% {
+    transform: translateY(-90%) scale(0.6);
+  }
+  100% {
+    transform: translateY(0%) scale(1);
+  }
+}
